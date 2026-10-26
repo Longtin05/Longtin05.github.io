@@ -1,16 +1,23 @@
+/*
+JavaScript Site Demo
+Gabriella Longtin
+10/26/2026
+*/
+
+// Select all navigation buttons
 const buttons = document.querySelectorAll("nav button");
-    const pages = document.querySelectorAll(".page");
 
-    buttons.forEach(button => {
-      button.addEventListener("click", () => {
-        const targetPage = button.dataset.page;
+// Add click events to navigation buttons
+buttons.forEach(button => {
 
-        // Update active button
-        buttons.forEach(btn => btn.classList.remove("active"));
-        button.classList.add("active");
+  button.addEventListener("click", () => {
 
-        // Show the selected "page"
-        pages.forEach(page => {
-          page.classList.toggle("active", page.id === targetPage);
-        });
-      });
+    // Remove active class from all buttons
+    buttons.forEach(btn => btn.classList.remove("active"));
+
+    // Add active class to clicked button
+    button.classList.add("active");
+
+  });
+
+});

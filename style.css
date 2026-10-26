@@ -1,69 +1,193 @@
-/* 
+/*
 JavaScript Site Demo
 Gabriella Longtin, 10/26/2026
 */
 
+/*==========body============== */
+
 body {
 
- /* see https://developer.mozilla.org/en-US/docs/Web/CSS/font for more about fonts */
- /* also https://fonts.google.com for additional fonts */
+  /* see https://developer.mozilla.org/en-US/docs/Web/CSS/font for more about fonts */
+  /* also https://fonts.google.com for additional fonts */
 
-      font-family: Arial, sans-serif;
-      background-color: #FFCDB2;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
+  font-family: Arial, sans-serif;
+  background-color: #FFCDB2;
+  color: #6D6875;
+
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
 
 /*==========navigation============== */
 
-    nav {
-      background-color: #FFCDB2;
-      padding: 10px 0;
-     /*flexible box layout see: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout */
-      display: flex;
-     /* align items along the main axis of a flex container */
-     /* see https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
-      justify-content: center;
+nav {
 
-     /*define the spacing between rows and columns in layout models */
-     /* see https://developer.mozilla.org/en-US/docs/Web/CSS/gap*/
-      gap: 10px;
-    }
+  background-color: #6D6875;
+  padding: 10px 0;
 
-/* default navigation */
-    nav button {
-      background-color: #83695E;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      font-size: 16px;
-        
-     /* see https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius*/
-      border-radius: 5px;
-    }
+  /* flexible box layout */
+  /* see https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout */
 
-/* navigation button hover style */
-    nav button:hover {
-      background-color: #F4D02E;
-    }
+  display: flex;
 
-/* active page button */
-    nav button.active {
-      background-color: #BE5019;
-    }
+  /* align items along the main axis of a flex container */
+  /* see https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
 
-div {
-    text-align: left;
+  justify-content: center;
+
+  /* define spacing between rows and columns */
+  /* see https://developer.mozilla.org/en-US/docs/Web/CSS/gap */
+
+  gap: 10px;
 }
 
-/*==========content============== */
-    .page {
-      display: none;
-      padding: 40px;
-    }
 
-    .page.active {
-      display: block;
-    }
+/* default navigation */
+
+nav button {
+
+  background-color: #6D6875;
+  color: white;
+
+  border: none;
+  padding: 10px 20px;
+
+  cursor: pointer;
+  font-size: 16px;
+
+  /* see https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius */
+
+  border-radius: 5px;
+}
+
+
+/* navigation button hover style */
+
+nav button:hover {
+
+  background-color: #B5838D;
+}
+
+
+/* active page button */
+
+nav button.active {
+
+  background-color: #E5989B;
+  color: #2D2530;
+}
+
+
+/*==========content============== */
+
+div {
+  text-align: left;
+}
+
+.page {
+
+  display: none;
+  padding: 40px;
+}
+
+.page.active {
+
+  display: block;
+}
+
+
+/*==========headings============== */
+
+h1 {
+
+  color: #6D6875;
+  font-size: 32px;
+}
+
+h2 {
+
+  color: #6D6875;
+  font-size: 24px;
+
+  margin-top: 30px;
+}
+
+
+/*==========paragraphs============== */
+
+p {
+
+  color: #6D6875;
+  font-size: 16px;
+
+  line-height: 1.6;
+}
+
+
+/*==========sections============== */
+
+section {
+
+  background-color: #FFB4A2;
+
+  padding: 20px;
+  margin-bottom: 25px;
+
+  border-radius: 10px;
+}
+
+
+/*==========images============== */
+
+img {
+
+  max-width: 100%;
+  height: auto;
+
+  border-radius: 8px;
+  border: 3px solid #B5838D;
+}
+
+
+/*==========inner page navigation============== */
+
+.innerPageLinks {
+
+  background-color: #FFB4A2;
+
+  padding: 15px;
+  margin: 20px 0;
+
+  border-radius: 8px;
+
+  display: flex;
+  gap: 20px;
+
+  justify-content: center;
+}
+
+
+/* inner page links */
+
+.innerPageLinks a {
+
+  color: #6D6875;
+
+  text-decoration: none;
+  font-weight: bold;
+
+  padding: 8px 12px;
+
+  border-radius: 5px;
+}
+
+
+/* inner page links hover */
+
+.innerPageLinks a:hover {
+
+  background-color: #B5838D;
+  color: white;
+}

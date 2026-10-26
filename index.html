@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <!--
-Title
-Description
-Name, date
+Gabriella Longtin
+10/26/2026
 
-credits or additional comments
-// -->
+JavaScript Site Demo
+-->
 
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>One Page Navigation</title>
- <link rel="stylesheet" href="style.css" />
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
+  <!-- Navigation -->
   <nav>
-    <button data-page="home" class="active">Home</button>
-    <button data-page="about">About</button>
-    <button data-page="examples">Examples</button>
+    <button onclick="window.location.href='index.html'" class="active">Home</button>
+    <button onclick="window.location.href='about.html'">About</button>
+    <button onclick="window.location.href='examples.html'">Examples</button>
   </nav>
 
-  <div id="home" class="page active">
-    <h1>Title here for default / home page</h1>
-    <p>This is the start, default, or home page. Write up an introduction. </p>
-  </div>
+  <!-- Home Page Content -->
+  <main>
 
-  <div id="about" class="page">
-    <h1>About</h1>
-    <p>Give some background about the topic. </p>
-  </div>
+    <div id="home" class="page active">
+      <h1>Title here for default / home page</h1>
 
-  <div id="examples" class="page">
-    <h1>Examples</h1>
-    <p>Show some examples</p>
-    
-  </div>
+      <p>
+        This is the start, default, or home page.
+        Write up an introduction.
+      </p>
+    </div>
 
-<script src="script.js"></script>
+  </main>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
